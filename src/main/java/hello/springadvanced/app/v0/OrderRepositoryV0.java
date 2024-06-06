@@ -1,4 +1,4 @@
-package hello.springadvanced.v0;
+package hello.springadvanced.app.v0;
 
 
 import lombok.RequiredArgsConstructor;

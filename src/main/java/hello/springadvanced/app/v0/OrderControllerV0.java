@@ -1,8 +1,9 @@
-package hello.springadvanced.v0;
+package hello.springadvanced.app.v0;
 
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -13,7 +14,7 @@ public class OrderControllerV0 {
 
 
   @GetMapping("/v0/request")
-  public String request(String itemId) {
+  public String request(@RequestParam("itemId") String itemId) {
     orderService.orderItem(itemId);
     return "ok";
   }
